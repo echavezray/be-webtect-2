@@ -1,0 +1,25 @@
+### GET STUDENTS
+GET http://localhost:3000/students
+
+### CREATE STUDENT
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "age": 20
+}
+
+### UPDATE STUDENT
+PUT http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+  "name": "Ernesto",
+  "email": "ernesto@example.com",
+  "age": 25
+}
+
+### DELETE STUDENT
+DELETE http://localhost:3000/students/3
